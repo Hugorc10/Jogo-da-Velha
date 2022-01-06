@@ -14,7 +14,7 @@ public class SquareController {
   // Objeto que ira guardar a parte visual do quadrado
   private final SquareView squareView;
 
-  private ReadOnlyObjectWrapper<State> state = new ReadOnlyObjectWrapper<>(State.EMPTY);
+  private final ReadOnlyObjectWrapper<State> state = new ReadOnlyObjectWrapper<>(State.EMPTY);
 
   public ReadOnlyObjectProperty<State> stateProperty() {
     return state.getReadOnlyProperty();

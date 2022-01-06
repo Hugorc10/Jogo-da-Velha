@@ -5,7 +5,6 @@ import controller.SquareController;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class WinningStrategy {
   
   // Variaveis com valores de referencia

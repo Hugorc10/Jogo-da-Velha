@@ -11,16 +11,16 @@ import view.GameView;
 public class Game {
 
   // Parte visual da aplicacao
-  private GameView gameView;
+  private final GameView gameView;
   // Fundo da aplicacao
-  private Board board = new Board(this);
+  private final Board board = new Board(this);
   // Define o objeto que contem a estrategia de ganho do jogo e atribui um fundo a ele
-  private WinningStrategy winningStrategy = new WinningStrategy(board);
+  private final WinningStrategy winningStrategy = new WinningStrategy(board);
 
-  private ReadOnlyObjectWrapper<SquareController.State> currentPlayer = new ReadOnlyObjectWrapper<>(SquareController.State.CROSS);
-  private ReadOnlyObjectWrapper<SquareController.State> winner = new ReadOnlyObjectWrapper<>(SquareController.State.EMPTY);
-  private ReadOnlyBooleanWrapper drawn = new ReadOnlyBooleanWrapper(false);
-  private ReadOnlyBooleanWrapper gameOver = new ReadOnlyBooleanWrapper(false);
+  private final ReadOnlyObjectWrapper<SquareController.State> currentPlayer = new ReadOnlyObjectWrapper<>(SquareController.State.CROSS);
+  private final ReadOnlyObjectWrapper<SquareController.State> winner = new ReadOnlyObjectWrapper<>(SquareController.State.EMPTY);
+  private final ReadOnlyBooleanWrapper drawn = new ReadOnlyBooleanWrapper(false);
+  private final ReadOnlyBooleanWrapper gameOver = new ReadOnlyBooleanWrapper(false);
 
   /**
    * Construtor que inicializa um novo gameView e seta um gameManager

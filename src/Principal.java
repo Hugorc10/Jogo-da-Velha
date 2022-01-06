@@ -24,12 +24,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import util.GameManager;
-//import util.GameManager;
 
 public class Principal extends Application {
 
   public static void main(String[] args) {
-      Application.launch(Principal.class);
+    Application.launch(Principal.class);
   }
 
   /**
@@ -39,7 +38,7 @@ public class Principal extends Application {
    * @throws Exception Excecao de erro de execucao
    */
   @Override
-  public void start(Stage myStage) throws Exception {
+  public void start(Stage myStage) {
     GameManager gameManager = new GameManager();
     Scene scene = gameManager.getGameScene();
 
