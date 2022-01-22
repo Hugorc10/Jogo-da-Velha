@@ -1,2 +1,2 @@
-# Jogo_da_Velha
-Jogo da velha simples feito em Java
+# Jogo da Velha
+Jogo da velha feito em Java e JavaFX

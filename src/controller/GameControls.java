@@ -12,7 +12,7 @@ import util.GameManager;
 import util.Game;
 
 public class GameControls extends HBox {
-
+  
   /**
    * Seta os controles de renicio da partida
    * <p>
